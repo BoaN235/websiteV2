@@ -41,7 +41,7 @@ h1Element.addEventListener("click", () => {
 
 
 function home() {
-window.location.href = "../home/index.html";
+window.location.href = "../home/home.html";
 }
 function projects() {
 window.location.href = "../projects/project_list.html";
