@@ -4,12 +4,26 @@ Red #A63D40
 Yellow #E9B872
 
 Highlight Colors
-Black #000000
+Black #1d1d1d
 Red #c54a4e
+Yellow #ffc97d
 */
 /* Add a black background color to the top navigation */
+
+:root {
+    --primary-color: #151515;
+    --secondary-color: #A63D40;
+    --tertiary-color: #E9B872;
+
+    --primary-highlight-color: #1d1d1d;
+    --secondary-highlight-color: #c54a4e;
+    --tertiary-highlight-color: #ffc97d;
+
+
+}
+
 .topnav {
-    background-color: #A63D40;
+    background-color: var(--secondary-color);
     overflow: hidden;
     position: sticky;
     height: 10vh;
@@ -18,12 +32,12 @@ Red #c54a4e
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .btn-bd-title:hover {
-    background-color: #000000;
-    color: #c54a4e;
+    background-color: var(--primary-highlight-color);
+    color: var(--tertiary-highlight-color);
 }
 .btn-bd-title {
-    background-color: #151515;
-    color: #A63D40;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
     scale: 1.5;
     position: relative;
     top: 2vh;
@@ -33,7 +47,7 @@ Red #c54a4e
 }
 /* Style the links inside the navigation bar */
 .topnav a {
-    color: #A63D40; 
+    color: var(--tertiary-color); 
 }
 
 @keyframes slideInFromLeft {
@@ -55,13 +69,13 @@ Red #c54a4e
     height: 110vh;
 }
 
-#hacker_title {
+.hacker-type-effect {
     font-size: 25px;
 }
 /* Global */
 body {
-    color: #A63D40; 
+    color: var(--tertiary-color); 
     font-family: 'Anonymous Pro', monospace;
-    background-color: #151515;
+    background-color: var(--primary-color);
     height: 100vh;
 }

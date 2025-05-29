@@ -5,7 +5,7 @@ const hiddenText = h1Element.textContent;
 
 let previousTimestamp = 1000;
 let elapsedSeconds = 0;
-let secondspercharacterReveal = 0.1;
+let secondspercharacterReveal = 0.2;
 
 
 const animationLoop = (currentTimestamp) => {
@@ -41,14 +41,14 @@ h1Element.addEventListener("click", () => {
 
 
 function home() {
-window.location.href = "index.html";
+window.location.href = "../home/index.html";
 }
 function projects() {
-window.location.href = "project_list.html";
+window.location.href = "../projects/project_list.html";
 }
 function blog() {
-window.location.href = "index.html";
+window.location.href = "../blog/blog.html";
 }
 function about() {
-window.location.href = "index.html";
+window.location.href = "../about/about.html";
 }
