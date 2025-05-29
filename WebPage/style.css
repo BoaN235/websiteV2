@@ -1,0 +1,67 @@
+/* Color Pallet 
+Black #151515
+Red #A63D40
+Yellow #E9B872
+
+Highlight Colors
+Black #000000
+Red #c54a4e
+*/
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #A63D40;
+    overflow: hidden;
+    position: sticky;
+    height: 10vh;
+    width: 100%;
+    top: 0;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.btn-bd-title:hover {
+    background-color: #000000;
+    color: #c54a4e;
+}
+.btn-bd-title {
+    background-color: #151515;
+    color: #A63D40;
+    scale: 1.5;
+    position: relative;
+    top: 2vh;
+    left: 0vh;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #A63D40; 
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.top-nav-buttons topnav {
+    display: contents;
+    position: relative;
+    margin: 100px;
+    font-size: 17px;
+}
+
+.hero {
+    height: 110vh;
+}
+
+#hacker_title {
+    font-size: 25px;
+}
+/* Global */
+body {
+    color: #A63D40; 
+    font-family: 'Anonymous Pro', monospace;
+    background-color: #151515;
+    height: 100vh;
+}
