@@ -103,6 +103,7 @@ Yellow #ffc97d
 
 .hero {
     height: 300%;
+    z-index: -1;
 }
 
 .hacker-type-effect {

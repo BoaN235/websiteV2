@@ -3,7 +3,7 @@ const h1Element = document.getElementById("hacker_title");
 console.log(h1Element)
 const hiddenText = h1Element.textContent;
 
-let previousTimestamp = 1000;
+let previousTimestamp = 0;
 let elapsedSeconds = 0;
 let secondspercharacterReveal = 0.2;
 
