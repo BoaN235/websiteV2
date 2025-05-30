@@ -15,23 +15,54 @@ Yellow #ffc97d
     --secondary-color: #A63D40;
     --tertiary-color: #E9B872;
 
-    --primary-highlight-color: #1d1d1d;
-    --secondary-highlight-color: #c54a4e;
+    --primary-highlight-color: #292929;
+    --secondary-highlight-color: #d45155;
     --tertiary-highlight-color: #ffc97d;
-
+    /*
+    --primary-gradient-color: linear-gradient(to right, var(--primary-color) , var(--primary-highlight-color))
+    --secondary-gradient-color: linear-gradient(to right, var(--secondary-color) , var(--secondary-highlight-color));
+    --tertiary-gradient-color: linear-gradient(to right, var(--tertiary-color) , var(--tertiary-highlight-color));
+    */
 
 }
 
+
+.nav-item {
+    color: --tertiary-color;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-image: linear-gradient(to right, var(--secondary-color) , var(--secondary-highlight-color));
+    color: --tertiary-color;
+    /*animation: 1s ease-out 0s 1 slideInFromLeft;*/
+}
+
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* 
 .topnav {
-    background-color: var(--secondary-color);
+    background-image: linear-gradient(to right, var(--secondary-color) , var(--secondary-highlight-color));;
     overflow: hidden;
     position: sticky;
-    height: 10vh;
+    height: 10%;
     width: 100%;
     top: 0;
     animation: 1s ease-out 0s 1 slideInFromLeft;
     z-index: 2;
 }
+
 .btn-bd-title:hover {
     background-color: var(--primary-highlight-color);
     color: var(--tertiary-highlight-color);
@@ -46,28 +77,32 @@ Yellow #ffc97d
     margin-right: 30px;
     margin-left: 30px;
 }
-/* Style the links inside the navigation bar */
-.topnav a {
-    color: var(--tertiary-color); 
+
+
+.top-nav-buttons a.active {
+  background-color: #000000;
+  color: white;
 }
 
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
+
+
 .top-nav-buttons topnav {
     display: contents;
     position: relative;
-    margin: 100px;
     font-size: 17px;
+}
+*/
+
+.titletext {
+    transform-origin: center center;
+    font-size:  10vb;
+    position: fixed;
+    left: 45%;
+    font-family: sans-serif;
 }
 
 .hero {
-    height: 110vh;
+    height: 300%;
 }
 
 .hacker-type-effect {
@@ -77,6 +112,6 @@ Yellow #ffc97d
 body {
     color: var(--tertiary-color); 
     font-family: 'Anonymous Pro', monospace;
-    background-color: var(--primary-color);
+    background-image: linear-gradient(to right, var(--primary-color) , var(--primary-highlight-color));
     height: 100vh;
 }
